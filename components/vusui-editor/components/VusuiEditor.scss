@@ -1,0 +1,300 @@
+/*
+ * @Description: VusuiEditor样式
+ * @Author: linpan(45650368@qq.com)
+ * @Date: 2022-11-17 21:32:56
+ * @LastEditors: vusui gophp@163.com
+ * @LastEditTime: 2022-11-19 22:21:17
+ * @WebSite: https://vusui.com
+ * @Copyright: 2017-present The Vusui Authors
+ * @Readme: 开源不易，且用且珍惜！
+ */
+:root {
+  --ve-border-color: #ccc;
+  --ve-drag-arrow-color: rgba(100, 100, 100, 0.6);
+  --ve-drag-bg-color: rgba(150, 150, 150, 0.1);
+  --ve-bg-color: #fff;
+}
+
+.vusui-editor {
+  position: relative;
+
+  .vusui-editor-container {
+    margin: 0;
+    width: 100%;
+    min-height: 100px;
+  }
+
+  .ql-toolbar {
+    // 防止其他样式影响工具栏行高
+    line-height: 1;
+
+    // 标题样式
+    .ql-picker.ql-header {
+      .ql-picker-label::before,
+      .ql-picker-item::before {
+        content: '正文';
+      }
+      .ql-picker-label[data-value='1']::before,
+      .ql-picker-item[data-value='1']::before {
+        content: '标题 1';
+      }
+      .ql-picker-label[data-value='2']::before,
+      .ql-picker-item[data-value='2']::before {
+        content: '标题 2';
+      }
+      .ql-picker-label[data-value='3']::before,
+      .ql-picker-item[data-value='3']::before {
+        content: '标题 3';
+      }
+      .ql-picker-label[data-value='4']::before,
+      .ql-picker-item[data-value='4']::before {
+        content: '标题 4';
+      }
+      .ql-picker-label[data-value='5']::before,
+      .ql-picker-item[data-value='5']::before {
+        content: '标题 5';
+      }
+      .ql-picker-label[data-value='6']::before,
+      .ql-picker-item[data-value='6']::before {
+        content: '标题 6';
+      }
+    }
+
+    // 字体大小
+    .ql-picker.ql-size {
+      .ql-picker-label::before,
+      .ql-picker-item::before {
+        content: '14px';
+      }
+      .ql-picker-label[data-value='12px']::before,
+      .ql-picker-item[data-value='12px']::before {
+        content: '12px';
+      }
+      .ql-picker-label[data-value='14px']::before,
+      .ql-picker-item[data-value='14px']::before {
+        content: '14px';
+      }
+      .ql-picker-label[data-value='16px']::before,
+      .ql-picker-item[data-value='16px']::before {
+        content: '16px';
+      }
+      .ql-picker-label[data-value='18px']::before,
+      .ql-picker-item[data-value='18px']::before {
+        content: '18px';
+      }
+      .ql-picker-label[data-value='20px']::before,
+      .ql-picker-item[data-value='20px']::before {
+        content: '20px';
+      }
+      .ql-picker-label[data-value='24px']::before,
+      .ql-picker-item[data-value='24px']::before {
+        content: '24px';
+      }
+      .ql-picker-label[data-value='28px']::before,
+      .ql-picker-item[data-value='28px']::before {
+        content: '28px';
+      }
+      .ql-picker-label[data-value='32px']::before,
+      .ql-picker-item[data-value='32px']::before {
+        content: '32px';
+      }
+      .ql-picker-label[data-value='36px']::before,
+      .ql-picker-item[data-value='36px']::before {
+        content: '36px';
+      }
+      .ql-picker-label[data-value='72px']::before,
+      .ql-picker-item[data-value='72px']::before {
+        content: '72px';
+      }
+    }
+
+    // 字体样式
+    .ql-picker.ql-font {
+      .ql-picker-label::before,
+      .ql-picker-item::before {
+        content: '微软雅黑';
+        font-family: 'Microsoft YaHei';
+      }
+      .ql-picker-label[data-value='SimSun']::before,
+      .ql-picker-item[data-value='SimSun']::before {
+        content: '宋体';
+        font-family: 'SimSun' !important;
+      }
+      .ql-picker-label[data-value='SimHei']::before,
+      .ql-picker-item[data-value='SimHei']::before {
+        content: '黑体';
+        font-family: 'SimHei';
+      }
+      .ql-picker-label[data-value='Microsoft-YaHei']::before,
+      .ql-picker-item[data-value='Microsoft-YaHei']::before {
+        content: '微软雅黑';
+        font-family: 'Microsoft YaHei';
+      }
+      .ql-picker-label[data-value='KaiTi']::before,
+      .ql-picker-item[data-value='KaiTi']::before {
+        content: '楷体';
+        font-family: 'KaiTi' !important;
+      }
+      .ql-picker-label[data-value='FangSong']::before,
+      .ql-picker-item[data-value='FangSong']::before {
+        content: '仿宋';
+        font-family: 'FangSong';
+      }
+      .ql-picker-label[data-value='Arail']::before,
+      .ql-picker-item[data-value='Arail']::before {
+        content: 'Arail';
+        font-family: 'Arail';
+      }
+      .ql-picker-label[data-value='Tahoma']::before,
+      .ql-picker-item[data-value='Tahoma']::before {
+        content: 'Tahoma';
+        font-family: 'Tahoma';
+      }
+      .ql-picker-label[data-value='Verdana']::before,
+      .ql-picker-item[data-value='Verdana']::before {
+        content: 'Verdana';
+        font-family: 'Verdana';
+      }
+      .ql-picker-label[data-value='Courier New']::before,
+      .ql-picker-item[data-value='Courier New']::before {
+        content: 'Courier New';
+        font-family: 'Courier New';
+      }
+    }
+  }
+
+  .ql-snow {
+    .ql-tooltip[data-mode='link']::before {
+      content: '请输入链接地址:';
+    }
+    .ql-tooltip.ql-editing a.ql-action::after {
+      content: '保存';
+      border-right: 0px;
+      padding-right: 5px;
+    }
+    .ql-tooltip[data-mode='video']::before {
+      content: '请输入视频地址:';
+    }
+    .ql-tooltip input[type='text'] {
+      width: 260px;
+    }
+
+    .ql-tooltip {
+      &::before {
+        content: '链接地址:';
+      }
+
+      .ql-action::after {
+        content: '编辑';
+      }
+
+      .ql-remove::before {
+        content: '删除';
+      }
+    }
+  }
+}
+
+// 拖拽条
+.vusui-editor-drag {
+  height: 14px;
+  border: 1px solid var(--ve-border-color);
+  border-top: 0;
+  cursor: s-resize;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .drag-arrow {
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    margin: 1px 0;
+    border: 2px solid transparent;
+
+    &.top {
+      border-bottom-color: var(--ve-drag-arrow-color);
+    }
+
+    &.bottom {
+      border-top-color: var(--ve-drag-arrow-color);
+    }
+  }
+
+  .drag-line {
+    width: 14px;
+    height: 1px;
+    background-color: var(--ve-drag-arrow-color);
+  }
+}
+
+// 隐藏边框
+.ql-bubble + .vusui-editor-drag {
+  border: 0;
+  background-color: var(--ve-drag-bg-color);
+}
+
+// 夜间模式
+html.dark {
+  .vusui-editor {
+    --ve-border-color: #4c4d4f;
+    --ve-bg-color: #333;
+    --ve-color: #c3c5c9;
+    --ve-color-hover: #06c;
+    --ve-drag-bg-color: rgba(88, 88, 88, 0.1);
+
+    .ql-snow {
+      &.ql-toolbar,
+      &.ql-container {
+        border-color: var(--ve-border-color);
+      }
+
+      .ql-picker-options {
+        background-color: var(--ve-bg-color);
+      }
+
+      &.ql-toolbar {
+        .ql-picker {
+          &.ql-expanded .ql-picker-label,
+          .ql-picker-options {
+            border-color: var(--ve-border-color);
+          }
+        }
+      }
+
+      .ql-editing {
+        color: var(--ve-color);
+        border-color: var(--ve-border-color);
+        background-color: var(--ve-bg-color);
+        box-shadow: 0px 0px 5px var(--ve-border-color);
+      }
+
+      .ql-picker {
+        .ql-picker-item {
+          color: var(--ve-color);
+        }
+        .ql-picker-item:hover {
+          color: var(--ve-color-hover);
+        }
+      }
+
+      .ql-tooltip {
+        border-color: var(--ve-border-color);
+        background-color: var(--ve-bg-color);
+        box-shadow: 0px 0px 5px var(--ve-border-color);
+        color: var(--ve-color);
+      }
+    }
+
+    .ql-editor {
+      color: var(--ve-color);
+    }
+
+    .ql-bubble + .vusui-editor-drag {
+      border: 0;
+      background-color: var(--ve-drag-bg-color);
+    }
+  }
+}

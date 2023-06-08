@@ -1,0 +1,54 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				
+			}
+		},{
+			"path": "pages/demo/video",
+			"style": {
+				
+			}
+		},{
+			"path": "pages/demo/richText",
+			"style": {
+				
+			}
+		}
+	],
+	"subPackages": [
+		{
+			"root": "indexPages",
+			"pages": [
+				{
+					"path": "login/index",
+					"style": {
+						"topWindow": false,
+						"leftWindow": false
+					}
+				}
+			]
+		}
+	],
+	"globalStyle": {
+		"backgroundColor": "#F8F8F8"
+	},
+	"topWindow": {
+		"path": "windows/topWindow",
+		"style": {
+			"height": "60px"
+		},
+		"matchMedia": {
+			"minWidth": 0
+		}
+	},
+	"leftWindow": {
+		"path": "windows/leftWindow",
+		"style": {
+			"width": "240px",
+			"height": "100%"
+		}
+	},
+	"uniIdRouter": {}
+}

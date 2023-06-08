@@ -1,0 +1,71 @@
+/* 隐藏所有页面的 navigationBar */
+.uni-app--showtopwindow uni-page-head {
+	display: none;
+}
+
+/* 显示路径为 pages/component/view/view 页面的 navigationBar */
+/* .uni-app--showtopwindow [data-page="pages/component/view/view"] uni-page-head {
+	display: block;
+} */
+.uni-left-window{
+	height: 100%;
+}
+
+
+/* button 重置样式 */
+::v-deep button[size="mini"] {
+	line-height: 2.4;
+	font-size: 12px;
+	border-radius: 3px;
+}
+
+button {
+	background: #fff;
+	border: 1px solid #dcdfe6;
+	color: #606266;
+	box-sizing: border-box;
+	border: 0 !important;
+}
+
+button[type="primary"] {
+	background-color: #409eff;
+	border-color: #409eff;
+	border-width: 0;
+}
+
+button[type="warn"] {
+	background-color: #f56c6c;
+	border-color: #f56c6c;
+	border-width: 0;
+}
+
+button[type="default"] {
+	background: #fff;
+	border: 1px solid #dcdfe6;
+	color: #606266;
+	box-sizing: border-box;
+}
+
+button[type="primary"][plain] {
+	border-color: #409eff;
+	color: #409eff;
+}
+
+button[type="warn"][plain] {
+	border-color: #f56c6c;
+	color: #f56c6c;
+}
+
+button[type="default"][plain] {
+	border-color: #dcdfe6;
+	color: #606266;
+}
+
+button[plain] {
+	border-color: #dcdfe6;
+	color: #606266;
+}
+
+button:after {
+	border-width: 0;
+}
