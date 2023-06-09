@@ -69,3 +69,18 @@ button[plain] {
 button:after {
 	border-width: 0;
 }
+
+.content-page{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	padding: 30px 30px;
+}
+.rightBtnS{
+		margin-left: 10px;
+	}
+.leftBtnS{
+		margin-right: 10px;
+	}
+	

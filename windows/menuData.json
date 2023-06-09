@@ -33,21 +33,35 @@
 		"children":[
 			{
 				"text":"3D模型",
-				"key":"1",
+				"key":"/pages/data/3DModel",
 				"icon":"",
 				"keyword":"3DModel"
 			},
 			{
 				"text":"数据分析",
-				"key":"2",
+				"key":"/pages/data/analysis",
 				"icon":"",
 				"keyword":"DataAnalysis"
 			},
 			{
 				"text":"数据垂直",
-				"key":"3",
+				"key":"/pages/data/vertical",
 				"icon":"",
 				"keyword":"DataVertical"
+			}
+		]
+	},
+	{
+		"text":"实例模块",
+		"key":"/example",
+		"icon":"",
+		"keyword":"example",
+		"children":[
+			{
+				"text":"基础表格",
+				"key":"/pages/example/table",
+				"icon":"",
+				"keyword":"table"
 			}
 		]
 	}

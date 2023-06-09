@@ -56,11 +56,13 @@ const IconFont = createFromIconfontCN({
 });
 
 import globalHttp from '@/api/http.js'
+import * as echarts from "echarts";
 
 export function createApp() {
   const app = createSSRApp(App)
 	app.config.globalProperties.$siteBaseUrl = globalHttp.siteBaseUrl;
 	app.config.globalProperties.$sendRequest = globalHttp.sendRequest;
+	app.config.globalProperties.$echarts = echarts;
 	app.component('IconFont',IconFont);
 	const i18n = createI18n({
 		locale: lang,

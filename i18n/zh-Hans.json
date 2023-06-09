@@ -117,7 +117,9 @@
 			"DataVertical":"数据垂直",
 			"assemblyDemo":"组件Demo",
 			"videoPlay":"视频播放器",
-			"richText":"富文本"
+			"richText":"富文本",
+			"example":"实例模块",
+			"table":"基础表格"
 		}
 	}
 }

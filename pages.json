@@ -15,6 +15,26 @@
 			"style": {
 				
 			}
+		},{
+			"path": "pages/data/3DModel",
+			"style": {
+				
+			}
+		},{
+			"path": "pages/data/analysis",
+			"style": {
+				
+			}
+		},{
+			"path": "pages/data/vertical",
+			"style": {
+				
+			}
+		},{
+			"path": "pages/example/table",
+			"style": {
+				
+			}
 		}
 	],
 	"subPackages": [

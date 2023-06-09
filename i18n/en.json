@@ -117,7 +117,9 @@
 			"DataVertical":"DataVertical",
 			"assemblyDemo":"assemblyDemo",
 			"videoPlay":"videoPlay",
-			"richText":"richText"
+			"richText":"richText",
+			"example":"exampleModule",
+			"table":"BasicTable"
 		}
 	}
 }
